@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Edit Categories</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; padding:20px; background:#0f172a; color:#e2e8f0; }
+    textarea { width: 100%; height: 140px; border-radius:8px; border:1px solid #334155; background:#0b1022; color:#e2e8f0; padding:10px; }
+    .row { display:flex; gap:10px; margin-top:10px; }
+    button { background:#2563eb; color:#fff; border:0; padding:8px 12px; border-radius:8px; cursor:pointer; }
+    label { font-weight:600; }
+  </style>
+</head>
+<body>
+  <h2>Edit Website Categories</h2>
+
+  <p>One domain per line (e.g., <code>instagram.com</code>)</p>
+
+  <div>
+    <label>Productive</label>
+    <textarea id="prod"></textarea>
+  </div>
+  <div style="margin-top:10px;">
+    <label>Unproductive</label>
+    <textarea id="unprod"></textarea>
+  </div>
+  <div class="row">
+    <button id="save">Save</button>
+    <span id="msg"></span>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
